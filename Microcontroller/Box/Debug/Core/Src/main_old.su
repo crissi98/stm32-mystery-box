@@ -1,0 +1,67 @@
+core_cm3.h:1511:22:void __NVIC_EnableIRQ(IRQn_Type)	16	static
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+basic_string.h:6405:3:std::__cxx11::string std::__cxx11::to_string(int)	24	static
+PWMController.h:29:2:PWMPin::PWMPin(GPIO_TypeDef*, uint8_t, volatile uint32_t*)	24	static
+PWMController.h:45:7:void PWMPin::toggleOff()	16	static
+PWMController.h:50:7:void PWMPin::toggleOn()	16	static
+PWMController.h:69:2:PWMController::PWMController()	16	static
+PWMController.h:73:7:void PWMController::initTimer(bool)	16	static
+PWMController.h:103:24:static PWMController* PWMController::getInstance(bool)	24	static
+PWMController.h:111:10:PWMPin* PWMController::addPin(GPIO_TypeDef*, uint8_t)	40	static
+PWMController.h:135:7:void PWMController::handleInterupt(uint32_t)	24	static
+PWMController.h:176:17:void TIM2_IRQHandler()	16	static
+Adc.h:34:2:Adc::Adc()	16	static
+Adc.h:35:7:void Adc::init()	16	static
+Adc.h:50:11:uint16_t Adc::getMeasurement(int)	16	static
+Adc.h:74:10:Adc::~Adc()	16	static
+Adc.h:74:10:virtual Adc::~Adc()	16	static
+UartReceiver.h:22:2:UartReceiver::UartReceiver()	16	static
+UartReceiver.h:27:23:static UartReceiver* UartReceiver::getInstance()	16	static
+UartReceiver.h:34:7:void UartReceiver::init()	16	static
+UartReceiver.h:46:7:void UartReceiver::handleRcv()	16	static
+UartReceiver.h:78:17:void USART2_IRQHandler()	8	static
+main_old.cpp:34:5:int displayWrite(const char*, uint32_t)	24	static
+main_old.cpp:39:5:int sensorWrite(uint8_t*, uint32_t)	24	static
+main_old.cpp:44:5:int sensorRead(uint8_t*, uint32_t)	24	static
+main_old.cpp:49:10:uint16_t measureLed(Adc*, int)	24	static
+main_old.cpp:58:5:int main()	1344	static
+main_old.cpp:144:6:void SystemClock_Config()	80	static
+main_old.cpp:181:6:void Error_Handler()	4	static,ignoring_inline_asm
+string_conversions.h:99:5:) [with _String = std::__cxx11::basic_string<char>; _CharT = char]	52	dynamic
+basic_string.h:5968:5:std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const _CharT*, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]	24	static
+ssd1306.h:122:3:SSD1306<WIDTH, HEIGHT, PPB, i2c_write>::SSD1306() [with char WIDTH = '\200'; char HEIGHT = '@'; char PPB = '\010'; int (* i2c_write)(const char*, uint32_t) = displayWrite]	16	static
+ssd1306.h:124:8:void SSD1306<WIDTH, HEIGHT, PPB, i2c_write>::init() [with char WIDTH = '\200'; char HEIGHT = '@'; char PPB = '\010'; int (* i2c_write)(const char*, uint32_t) = displayWrite]	16	static
+ssd1306.h:195:8:void SSD1306<WIDTH, HEIGHT, PPB, i2c_write>::clearDisplay() [with char WIDTH = '\200'; char HEIGHT = '@'; char PPB = '\010'; int (* i2c_write)(const char*, uint32_t) = displayWrite]	24	static
+ssd1306.h:222:8:void SSD1306<WIDTH, HEIGHT, PPB, i2c_write>::displayCharacter(char) [with char WIDTH = '\200'; char HEIGHT = '@'; char PPB = '\010'; int (* i2c_write)(const char*, uint32_t) = displayWrite]	24	static
+ssd1306.h:212:8:void SSD1306<WIDTH, HEIGHT, PPB, i2c_write>::displayText(std::__cxx11::string) [with char WIDTH = '\200'; char HEIGHT = '@'; char PPB = '\010'; int (* i2c_write)(const char*, uint32_t) = displayWrite]	48	dynamic
+apds9960.h:38:2:APDS9960<i2c_write, i2c_read>::APDS9960() [with int (* i2c_write)(uint8_t*, uint32_t) = sensorWrite; int (* i2c_read)(uint8_t*, uint32_t) = sensorRead]	16	static
+apds9960.h:41:7:void APDS9960<i2c_write, i2c_read>::init() [with int (* i2c_write)(uint8_t*, uint32_t) = sensorWrite; int (* i2c_read)(uint8_t*, uint32_t) = sensorRead]	16	static
+apds9960.h:45:7:void APDS9960<i2c_write, i2c_read>::powerOn() [with int (* i2c_write)(uint8_t*, uint32_t) = sensorWrite; int (* i2c_read)(uint8_t*, uint32_t) = sensorRead]	24	static
+apds9960.h:51:7:void APDS9960<i2c_write, i2c_read>::proximityOn() [with int (* i2c_write)(uint8_t*, uint32_t) = sensorWrite; int (* i2c_read)(uint8_t*, uint32_t) = sensorRead]	24	static
+apds9960.h:57:7:void APDS9960<i2c_write, i2c_read>::alsOn() [with int (* i2c_write)(uint8_t*, uint32_t) = sensorWrite; int (* i2c_read)(uint8_t*, uint32_t) = sensorRead]	24	static
+apds9960.h:67:11:uint16_t APDS9960<i2c_write, i2c_read>::getAlsClearData() [with int (* i2c_write)(uint8_t*, uint32_t) = sensorWrite; int (* i2c_read)(uint8_t*, uint32_t) = sensorRead]	24	static
+apds9960.h:63:10:uint8_t APDS9960<i2c_write, i2c_read>::getProximityData() [with int (* i2c_write)(uint8_t*, uint32_t) = sensorWrite; int (* i2c_read)(uint8_t*, uint32_t) = sensorRead]	16	static
+basic_string.h:604:9:std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(_InputIterator, _InputIterator, const _Alloc&) [with _InputIterator = char*; <template-parameter-2-2> = void; _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]	32	static
+move.h:98:5:constexpr typename std::remove_reference< <template-parameter-1-1> >::type&& std::move(_Tp&&) [with _Tp = std::__cxx11::basic_string<char>&]	16	static
+ssd1306.h:104:8:char SSD1306<WIDTH, HEIGHT, PPB, i2c_write>::commandLine(const char*, char) [with char WIDTH = '\200'; char HEIGHT = '@'; char PPB = '\010'; int (* i2c_write)(const char*, uint32_t) = displayWrite]	40	dynamic
+ssd1306.h:126:8:void SSD1306<WIDTH, HEIGHT, PPB, i2c_write>::showDisplay() [with char WIDTH = '\200'; char HEIGHT = '@'; char PPB = '\010'; int (* i2c_write)(const char*, uint32_t) = displayWrite]	1048	static
+ssd1306.h:171:8:void SSD1306<WIDTH, HEIGHT, PPB, i2c_write>::setAndShowBytesFromCurrentPosition(const char*, char) [with char WIDTH = '\200'; char HEIGHT = '@'; char PPB = '\010'; int (* i2c_write)(const char*, uint32_t) = displayWrite]	24	static
+stl_algo.h:4295:5:_OIter std::transform(_IIter, _IIter, _OIter, _UnaryOperation) [with _IIter = __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char> >; _OIter = __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char> >; _UnaryOperation = int (*)(int)]	32	static
+apds9960.h:29:7:void APDS9960<i2c_write, i2c_read>::setRegister(uint8_t, uint8_t) [with int (* i2c_write)(uint8_t*, uint32_t) = sensorWrite; int (* i2c_read)(uint8_t*, uint32_t) = sensorRead]	16	static
+apds9960.h:21:10:uint8_t APDS9960<i2c_write, i2c_read>::getRegisterValue(uint8_t) [with int (* i2c_write)(uint8_t*, uint32_t) = sensorWrite; int (* i2c_read)(uint8_t*, uint32_t) = sensorRead]	16	static
+basic_string.h:252:9:void std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::_M_construct(_InIterator, _InIterator) [with _InIterator = char*; _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]	32	static
+ssd1306.h:142:8:void SSD1306<WIDTH, HEIGHT, PPB, i2c_write>::setPosition(char, char) [with char WIDTH = '\200'; char HEIGHT = '@'; char PPB = '\010'; int (* i2c_write)(const char*, uint32_t) = displayWrite]	24	static
+ssd1306.h:115:8:char SSD1306<WIDTH, HEIGHT, PPB, i2c_write>::multipleData(const char*, char) [with char WIDTH = '\200'; char HEIGHT = '@'; char PPB = '\010'; int (* i2c_write)(const char*, uint32_t) = displayWrite]	40	dynamic
+stl_iterator.h:880:5:bool __gnu_cxx::operator!=(const __gnu_cxx::__normal_iterator<_Iterator, _Container>&, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&) [with _Iterator = char*; _Container = std::__cxx11::basic_string<char>]	24	static
+stl_iterator.h:800:7:__gnu_cxx::__normal_iterator<_Iterator, _Container>& __gnu_cxx::__normal_iterator<_Iterator, _Container>::operator++() [with _Iterator = char*; _Container = std::__cxx11::basic_string<char>]	16	static
+stl_iterator.h:792:7:__gnu_cxx::__normal_iterator<_Iterator, _Container>::reference __gnu_cxx::__normal_iterator<_Iterator, _Container>::operator*() const [with _Iterator = char*; _Container = std::__cxx11::basic_string<char>]	16	static
+basic_string.h:232:9:void std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::_M_construct_aux(_InIterator, _InIterator, std::__false_type) [with _InIterator = char*; _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]	40	static
+stl_iterator.h:844:7:const _Iterator& __gnu_cxx::__normal_iterator<_Iterator, _Container>::base() const [with _Iterator = char*; _Container = std::__cxx11::basic_string<char>]	16	static
+basic_string.tcc:206:7:void std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::_M_construct(_InIterator, _InIterator, std::forward_iterator_tag) [with _FwdIterator = char*; _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]	32	static
+type_traits.h:152:5:bool __gnu_cxx::__is_null_pointer(_Type*) [with _Type = char]	16	static
+stl_iterator_base_types.h:205:5:constexpr typename std::iterator_traits<_Iterator>::iterator_category std::__iterator_category(const _Iter&) [with _Iter = char*]	16	static
+stl_iterator_base_funcs.h:138:5:typename std::iterator_traits<_Iterator>::difference_type std::distance(_InputIterator, _InputIterator) [with _InputIterator = char*]	32	static
+stl_iterator_base_funcs.h:98:5:constexpr typename std::iterator_traits<_Iterator>::difference_type std::__distance(_RandomAccessIterator, _RandomAccessIterator, std::random_access_iterator_tag) [with _RandomAccessIterator = char*]	24	static
+main_old.cpp:187:1:void __static_initialization_and_destruction_0(int, int)	16	static
+main_old.cpp:187:1:cpp)	8	static
+main_old.cpp:187:1:cpp)	8	static

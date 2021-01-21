@@ -1,0 +1,3 @@
+i2c_master.cpp:3:6:void I2C_Master::init()	16	static
+i2c_master.cpp:27:6:void I2C_Master::write(uint8_t, uint8_t*, uint32_t, bool)	40	static
+i2c_master.cpp:51:6:void I2C_Master::read(uint8_t, uint8_t*, uint32_t, bool)	40	static
